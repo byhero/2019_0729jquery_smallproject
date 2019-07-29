@@ -1,10 +1,15 @@
 <!DOCTYPE html>
+<!--HTML-->
 <html>
 
 <head>
+    <!--font: Do Hyeon-->
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <!--css-->
+    <link href="./public/index.css" rel="stylesheet">
+    <!--Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -14,12 +19,123 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--javascript-->
+    <script src="./public/index.js"></script>
+    <!--charset-->
+    <meta charset="utf-8">
 </head>
 
-<body>
+<body class="bg-yellow">
+    <!--header-->
+    <div class="row">
+        <div class="col-3 text-left">
+            <div class="ml-3 mt-3">
+                <h5 class="bg-white border border-dark">배달 장소: <span class="bg-white border border-dark">경기도
+                        성남시 중원구
+                        하대원동
+                        77-77</span></h5>
+            </div>
+        </div>
+        <div class="col-6 text-center">
+            <div class="display-3">띵동!</div>
+        </div>
+        <div class="col-3 text-right">
+            <div class="mr-3 mt-3">
+                <a href="#" class="text-decoration-none text-dark h5" class="">로그인</a>
+                <a href="#" class="text-decoration-none text-dark h5">회원가입 </a>
+                <span class="text-gray border border-gray bg-white">주문표(0)</span>
+            </div>
+        </div>
+    </div>
 
+    <!--content-->
+    <div class="container">
+        <div class="jumbotron border border-dark bg-white">
+            <h1>실시간 배달 인기메뉴</h1>
+            <div class="row">
+                <a class="col">1. 뿌링클 치킨</a>
+                <a class="col">2. 슈프림 피자</a>
+                <a class="col">3. 불족발</a>
+                <a class="col">4. 아보카도 햄버거</a>
+                <a class="col">5. 치즈 떡볶이</a>
+            </div>
+        </div>
+
+        <div class="card-deck my-5">
+            <div class="card card-1">
+                <a href="#" class="text-decoration-none">
+                    <div class="card-body">
+                        <p class="card-text text-center text-dark h3">프랜차이즈</p>
+                    </div>
+                    <img class="card-img-top" src="./public/franchise.jpg" alt="franchise">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#" class="text-decoration-none">
+                    <div class="card-body">
+                        <p class="card-text text-center text-dark h3">한식</p>
+                    </div>
+                    <img class="card-img-top" src="./public/korean_food.jpg" alt="franchise">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#" class="text-decoration-none">
+                    <div class="card-body">
+                        <p class="card-text text-center text-dark h3">중식</p>
+                    </div>
+                    <img class="card-img-top" src="./public/chinese_food.jpg" alt="franchise">
+                </a>
+            </div>
+        </div>
+        <div class="card-deck my-5">
+            <div class="card">
+                <a href="#" class="text-decoration-none">
+                    <div class="card-body">
+                        <p class="card-text text-center text-dark h3">일식/돈까스</p>
+                    </div>
+                    <img class="card-img-top" src="./public/japanese_food.jpg" alt="franchise">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#" class="text-decoration-none">
+                    <div class="card-body">
+                        <p class="card-text text-center text-dark h3">양식/피자</p>
+                    </div>
+                    <img class="card-img-top" src="./public/western_food.jpg" alt="franchise">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#" class="text-decoration-none">
+                    <div class="card-body">
+                        <p class="card-text text-center text-dark h3">치킨</p>
+                    </div>
+                    <img class="card-img-top" src="./public/chicken.jpg" alt="franchise">
+                </a>
+            </div>
+        </div>
+        <div class="card-deck my-5">
+            <div class="card">
+                <a href="#" class="text-decoration-none">
+                    <div class="card-body">
+                        <p class="card-text text-center text-dark h3">족발/보쌈</p>
+                    </div>
+                    <img class="card-img-top" src="./public/pork_feet.jpg" alt="franchise">
+                </a>
+            </div>
+            <div class="card">
+                <a href="#" class="text-decoration-none">
+                    <div class="card-body">
+                        <p class="card-text text-center text-dark h3">편의점</p>
+                    </div>
+                    <img class="card-img-top" src="./public/convinience_store.jpg" alt="franchise">
+                </a>
+            </div>
+            <div class="card border-0">
+                <div class="card-body bg-yellow"></div>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
