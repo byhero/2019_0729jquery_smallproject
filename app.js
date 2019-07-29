@@ -12,5 +12,16 @@ router.get('/', function (req, res) {
     //__dirname : It will resolve to your project folder.
 });
 
+router.get('/admin', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/admin.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+router.get('/mypage', function (req, res) {
+    res.sendFile(path.join(__dirname + '/views/mypage.html'));
+    //__dirname : It will resolve to your project folder.
+});
+
+
 app.use('/', router);
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
